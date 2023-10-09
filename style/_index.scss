@@ -1,0 +1,22 @@
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & ul {
+        display: flex;
+    }
+  }
+  
+
+  .connexion-container {
+    display:flex;
+  }
