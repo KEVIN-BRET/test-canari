@@ -1,0 +1,18 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  height: 3rem;
+  width: 8rem;
+
+  &.btn-white {
+    color: hsl(356, 100%, 66%);
+    background: white;
+  }
+
+  &.btn-borded {
+    border: 1px solid white;
+
+  }
+}
