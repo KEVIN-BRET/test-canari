@@ -1,3 +1,5 @@
+// Buttons style :
+
 .btn {
   display: flex;
   align-items: center;
@@ -7,12 +9,11 @@
   width: 8rem;
 
   &.btn-white {
-    color: hsl(356, 100%, 66%);
-    background: white;
+    color: $light-red;
+    background: $white;
   }
 
   &.btn-borded {
-    border: 1px solid white;
-
+    border: 1px solid $white;
   }
 }

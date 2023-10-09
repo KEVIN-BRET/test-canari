@@ -3,9 +3,9 @@ header {
   padding: 2.5rem 7rem;
   border-radius: 0 0 0 3rem;
   background: url(../images/bg-pattern-intro-desktop.svg),
-    linear-gradient(90deg, hsl(13, 100%, 72%) 10%, hsl(353, 100%, 62%) 60%);
+    linear-gradient(90deg, $very-light-red-gradient 10%, $light-red-gradient 60%);
 
-  color: white;
+  color: $white;
 
   background-size: 200%;
   background-position: left 15% bottom 50%;
@@ -26,7 +26,6 @@ header {
     gap: 3rem;
 
     & .logo {
-      // font-family: "Overpass";
       font-size: 2rem;
       font-weight: 500;
     }
@@ -79,14 +78,54 @@ header {
 
 // Section 1 : Designed for the future
 
-.section1>* {
-border: 1px solid pink;
-}
-
 .section1 {
+  position: relative;
+  height: 1010px;
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 7rem;
+  padding: 0 7rem;
+  overflow: hidden;
+  & h2 {
+    margin: 150px auto;
+    position: absolute;
+  }
+  & .section1-content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    & h2,
+    h3 {
+      
+      font-family: Overpass;
+      color: $very-dark-blue;
+    }
+    & h3 {
+      margin: 2rem 0;
+    }
+    & p {
+      color: $very-dark-grayish-blue;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+    }
+    & .text {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
+      
+      width: 50%;
+
+    }
+    & .picture {
+      width: 50%;
+      padding: 5rem;
+      & img {
+        position: absolute;
+        // top: 10%;
+        // height: 100%;
+      }
+    }
+  }
 }
