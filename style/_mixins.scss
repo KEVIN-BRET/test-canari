@@ -1,0 +1,81 @@
+@mixin responsive-sides-padding {
+  @media (max-width: 1024px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  @media (max-width: 900px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  @media (max-width: 768px) {
+    padding-left:0;
+    padding-right: 0;
+  }
+}
+
+@mixin responsive-column-768px {
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// HEADER //
+@mixin responsive-header {
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// SECTION 1 //
+@mixin responsive-header {
+  @media (max-width: 900px) {
+    height: auto;
+    // padding: 0 9rem;
+
+    background: pink;
+
+    & h2 {
+      margin: 120px auto;
+      position: relative;
+      font-size: 1.8rem;
+    }
+
+    & .section1-content {
+      flex-direction: column-reverse;
+
+      & text {
+        width: 100%;
+      }
+
+      & .picture {
+        width: 100%;
+        justify-content: center;
+
+        & img {
+            position: inherit;
+            width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// SECTION 2 //
+@mixin responsive-header {
+  @media (max-width: 900px) {
+    height: auto;
+    // padding: 0 9rem;
+
+    & h2 {
+      margin: 120px auto;
+      position: relative;
+      font-size: 1.5rem;
+    }
+
+    & .section1-content {
+      flex-direction: column;
+    }
+  }
+}

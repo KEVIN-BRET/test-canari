@@ -4,15 +4,19 @@ header {
   border-radius: 0 0 0 6rem;
   background: url(../images/bg-pattern-intro-desktop.svg),
     linear-gradient(90deg, $very-light-red-gradient 5%, $light-red-gradient 60%);
-
   color: $white;
   background-size: 220%;
   background-position: left 24% bottom 48%;
+  @include responsive-sides-padding;
+
+  @media (max-width: 768px) {
+  }
 }
 
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
+  // margin-bottom: 3rem;
 }
 
 .menu-container {
@@ -27,9 +31,14 @@ header {
     justify-content: center;
     gap: 3rem;
 
+    & .nav-mobile {
+      display: none;
+    }
+
     & ul {
       display: flex;
       gap: 1.2rem;
+
       & li {
         color: $text-grey-red;
         display: flex;
@@ -78,7 +87,7 @@ header {
   }
 }
 
-// Section 1 : Designed for the future
+// SECTION 1 //
 
 .section1 {
   position: relative;
@@ -89,6 +98,7 @@ header {
   align-items: center;
   padding: 0 9rem;
   overflow: hidden;
+  @include responsive-sides-padding;
 
   & h2 {
     margin: 150px auto;
@@ -132,8 +142,50 @@ header {
       width: 50%;
       padding: 5rem;
 
-      & img {
+      & .desktop-picture {
+        display: flex;
         position: absolute;
+      }
+
+      & .mobile-picture {
+        display: none;
+      }
+    }
+  }
+  // @include responsive-header;
+  @media (max-width: 768px) {
+    display: none;
+
+    height: auto;
+
+    & h2 {
+      margin-top: 100px;
+      margin-bottom: 0;
+      position: relative;
+      font-size: 1.8rem;
+    }
+
+    & .section1-content {
+      flex-direction: column-reverse;
+
+      & text {
+        width: 100%;
+      }
+
+      & .picture {
+        width: 100%;
+        justify-content: center;
+        padding: 1.5rem 0rem;
+
+        & .desktop-picture {
+          display: none;
+          position: absolute;
+        }
+
+        & .mobile-picture {
+          display: flex;
+          margin: 1rem auto;
+        }
       }
     }
   }
@@ -142,6 +194,9 @@ header {
 // Section 2 : State of the Art Infrastructure
 
 .section2 {
+  @media (max-width: 768px) {
+    display: none;
+  }
   display: flex;
   align-items: center;
   height: 400px;
@@ -155,8 +210,8 @@ header {
     );
   background-position: left -50% top 80%;
   background-repeat: no-repeat;
-
   color: $white;
+  @include responsive-sides-padding;
 
   & .picture {
     display: flex;
@@ -188,6 +243,10 @@ header {
 
 // Section 3 : "Laptop"
 .section3 {
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   display: flex;
   flex-direction: row;
   position: relative;
@@ -196,6 +255,7 @@ header {
   align-items: center;
   padding: 2rem 9rem;
   overflow: hidden;
+  @include responsive-sides-padding;
 
   & .picture {
     display: flex;
@@ -235,10 +295,10 @@ footer {
   background: $very-dark-black-blue;
   padding: 4rem 9rem;
   border-radius: 0 6rem 0 0;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  @include responsive-sides-padding;
 
   & .footer-category {
     display: flex;
@@ -248,15 +308,31 @@ footer {
     & p {
       font-weight: 500;
       margin-bottom: 2.5rem;
+      margin-top: 1.8rem;
     }
 
     & ul {
       display: flex;
       flex-direction: column;
+      // margin-bottom: 1.8rem;
 
       & li {
         color: $grayish-blue;
         margin-bottom: 1.1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    & .logo {
+      margin-bottom: 3rem;
+    }
+    & .footer-category {
+      align-items: center;
+      & ul {
+        align-items: center;
       }
     }
   }
