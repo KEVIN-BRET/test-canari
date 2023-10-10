@@ -37,12 +37,6 @@ header {
     padding-right: 4rem;
   }
 }
-@media (max-width: 768px) {
-  header {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
@@ -127,12 +121,6 @@ header {
   .section1 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-}
-@media (max-width: 768px) {
-  .section1 {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .section1 h2 {
@@ -240,12 +228,6 @@ header {
     padding-right: 4rem;
   }
 }
-@media (max-width: 768px) {
-  .section2 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 .section2 .picture {
   display: flex;
   align-items: center;
@@ -280,11 +262,6 @@ header {
   padding: 2rem 9rem;
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  .section3 {
-    display: none;
-  }
-}
 @media (max-width: 1024px) {
   .section3 {
     padding-left: 6rem;
@@ -297,18 +274,15 @@ header {
     padding-right: 4rem;
   }
 }
-@media (max-width: 768px) {
-  .section3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 .section3 .picture {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
   padding-right: 1.5rem;
+}
+.section3 .picture .mobile-picture {
+  display: none;
 }
 .section3 .text {
   display: flex;
@@ -330,6 +304,31 @@ header {
   margin-bottom: 3rem;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .section3 {
+    flex-direction: column;
+    height: auto;
+    padding: 0 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+  .section3 .picture {
+    width: 100%;
+    padding-right: 0;
+    justify-content: center;
+  }
+  .section3 .picture .mobile-picture {
+    display: flex;
+  }
+  .section3 .picture .desktop-picture {
+    display: none;
+  }
+  .section3 .text {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
 
 footer {
   color: hsl(0, 0%, 100%);
@@ -350,12 +349,6 @@ footer {
   footer {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-}
-@media (max-width: 768px) {
-  footer {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 footer .footer-category {
