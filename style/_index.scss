@@ -154,7 +154,7 @@ header {
   }
   // @include responsive-header;
   @media (max-width: 768px) {
-    // display: none;
+    display: none;
 
     height: auto;
 
@@ -223,6 +223,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 50%;
+    color: $grayish-blue;
 
     & h2 {
       margin-bottom: 2rem;
@@ -245,6 +246,7 @@ header {
     justify-content: flex-end;
     padding: 0;
     padding-bottom: 7rem;
+    margin-top: 300px;
 
     text-align: center;
 
@@ -260,6 +262,10 @@ header {
     & .text {
       width: 100%;
       padding: 0 2rem;
+
+      & h2 {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
@@ -314,8 +320,7 @@ header {
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
-    padding-top: 300px;
-    // padding: 0 1.5rem;
+    padding: 0 1.5rem;
     line-height: 1rem;
     text-align: center;
 
