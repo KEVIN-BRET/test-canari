@@ -42,11 +42,6 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
-    // justify-content: center;
-
-    & div {
-      // padding: 1rem 3rem;
-    }
   }
 
   .intro {
@@ -145,19 +140,19 @@ header {
 // Section 2 : State of the Art Infrastructure
 
 .section2 {
-  // position: relative;
   display: flex;
   align-items: center;
   height: 400px;
   padding-right: 9rem;
   padding-left: 7rem;
   border-radius: 0 6rem 0 6rem;
-  background: linear-gradient(
-    90deg,
-    $very-dark-gray-blue-gradient 5%,
-    $very-dark-desaturated-blue 60%
-  );
-  background-position: left 17% bottom 47%;
+  background: url(../images/bg-pattern-circles.svg),
+    linear-gradient(
+      90deg,
+      $very-dark-gray-blue-gradient 5%,
+      $very-dark-desaturated-blue 60%
+    );
+  background-position: left -50% top 80%;
   background-repeat: no-repeat;
 
   color: $white;
@@ -188,6 +183,60 @@ header {
     & p {
       font-size: 1rem;
       line-height: 2rem;
+    }
+  }
+}
+
+// Section 3 : Free, open, simple
+
+.section3 {
+  position: relative;
+  height: 1010px;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 9rem;
+  overflow: hidden;
+
+  & .section3-content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    & .picture {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 50%;
+      // padding: 5rem;
+
+      & img {
+      }
+    }
+
+    & .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      margin-top: 4rem;
+
+      & h3 {
+        color: $very-dark-blue;
+        font-family: Overpass;
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+        width: 100%;
+      }
+      
+      & p {
+        color: $very-dark-grayish-blue;
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+        width: 100%;
+      }
     }
   }
 }

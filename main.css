@@ -141,8 +141,8 @@ header {
   padding-right: 9rem;
   padding-left: 7rem;
   border-radius: 0 6rem 0 6rem;
-  background: linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
-  background-position: left 17% bottom 47%;
+  background: url(../images/bg-pattern-circles.svg), linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
+  background-position: left -50% top 80%;
   background-repeat: no-repeat;
   color: hsl(0, 0%, 100%);
 }
@@ -168,6 +168,49 @@ header {
 .section2 .text p {
   font-size: 1rem;
   line-height: 2rem;
+}
+
+.section3 {
+  position: relative;
+  height: 1010px;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 9rem;
+  overflow: hidden;
+}
+.section3 .section3-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.section3 .section3-content .picture {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+.section3 .section3-content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-top: 4rem;
+}
+.section3 .section3-content .text h3 {
+  color: hsl(208, 49%, 24%);
+  font-family: Overpass;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.section3 .section3-content .text p {
+  color: hsl(207, 13%, 34%);
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 .btn {
