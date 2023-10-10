@@ -148,17 +148,17 @@ header {
   color: hsl(0, 0%, 100%);
 }
 .section2 .picture {
-  position: relative;
-}
-.section2 .picture img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
   padding-top: 40px;
+  padding-right: 1.5rem;
 }
 .section2 .text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 50%;
-  padding-left: 4rem;
 }
 .section2 .text h2 {
   margin-bottom: 2rem;
@@ -172,41 +172,36 @@ header {
 }
 
 .section3 {
+  display: flex;
+  flex-direction: row;
   position: relative;
   height: 1010px;
   padding-top: 8rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 2rem 9rem;
   overflow: hidden;
 }
-.section3 .section3-content {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.section3 .section3-content .picture {
+.section3 .picture {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
+  padding-right: 1.5rem;
 }
-.section3 .section3-content .text {
+.section3 .text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 50%;
   margin-top: 4rem;
 }
-.section3 .section3-content .text h3 {
+.section3 .text h3 {
   color: hsl(208, 49%, 24%);
   font-family: Overpass;
   font-size: 1.8rem;
   margin: 1.5rem 0;
   width: 100%;
 }
-.section3 .section3-content .text p {
+.section3 .text p {
   color: hsl(207, 13%, 34%);
   font-size: 1rem;
   line-height: 2rem;

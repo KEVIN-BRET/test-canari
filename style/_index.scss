@@ -10,7 +10,6 @@ header {
   background-position: left 17% bottom 47%;
 }
 
-
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
@@ -159,20 +158,18 @@ header {
   color: $white;
 
   & .picture {
-    position: relative;
-    // width: 50%;
-
-    & img {
-      padding-top: 40px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-top: 40px;
+    padding-right: 1.5rem;
   }
+
   & .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50%;
-
-    padding-left: 4rem;
 
     & h2 {
       margin-bottom: 2rem;
@@ -188,56 +185,45 @@ header {
   }
 }
 
-// Section 3 : Free, open, simple
-
+// Section 3 : "Laptop"
 .section3 {
+  display: flex;
+  flex-direction: row;
   position: relative;
   height: 1010px;
   padding-top: 8rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 2rem 9rem;
   overflow: hidden;
 
-  & .section3-content {
-    height: 100%;
+  & .picture {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 1.5rem;
+  }
 
-    & .picture {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 50%;
-      // padding: 5rem;
+  & .text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 4rem;
 
-      & img {
-      }
+    & h3 {
+      color: $very-dark-blue;
+      font-family: Overpass;
+      font-size: 1.8rem;
+      margin: 1.5rem 0;
+      width: 100%;
     }
 
-    & .text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-      margin-top: 4rem;
-
-      & h3 {
-        color: $very-dark-blue;
-        font-family: Overpass;
-        font-size: 1.8rem;
-        margin: 1.5rem 0;
-        width: 100%;
-      }
-
-      & p {
-        color: $very-dark-grayish-blue;
-        font-size: 1rem;
-        line-height: 2rem;
-        margin-bottom: 3rem;
-        width: 100%;
-      }
+    & p {
+      color: $very-dark-grayish-blue;
+      font-size: 1rem;
+      line-height: 2rem;
+      margin-bottom: 3rem;
+      width: 100%;
     }
   }
 }
