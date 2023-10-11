@@ -44,12 +44,14 @@ header {
 }
 
 .menu-container {
+  border: 1px solid blue;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .menu-container nav {
+  border: 1px solid green;
   border: 1px solid green;
   display: flex;
   align-items: center;
