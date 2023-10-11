@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,28 +25,68 @@
           src="./images/icon-hamburger.svg"
           alt="mobile navigation menu logo"
         />
-        <nav class="all-links">
+        <nav class="all-nav-links">
           <!-- nav links -->
           <ul class="nav-links">
-            <li>
+            <li class="category-link">
               <div class="menuTilte">
-                Product<span><img src="./images/icon-arrow-light.svg" /></span>
+                Product<span>
+                  <img
+                    class="arrow-light"
+                    src="./images/icon-arrow-light.svg"
+                  />
+                  <img class="arrow-dark" src="./images/icon-arrow-dark.svg" />
+                </span>
               </div>
               <div class="menuItems">
                 <ul>
-                  <li><a href="#" class="menuItem">Overview</a></li>
-                  <li><a href="#" class="menuItem">Pricing</a></li>
-                  <li><a href="#" class="menuItem">Marketplace</a></li>
-                  <li><a href="#" class="menuItem">Feature</a></li>
-                  <li><a href="#" class="menuItem">Integrations</a></li>
+                  <li class="menuItem"><a href="#">Pricing</a></li>
+                  <li class="menuItem"><a href="#">Marketplace</a></li>
+                  <li class="menuItem"><a href="#">Overview</a></li>
+                  <li class="menuItem"><a href="#">Feature</a></li>
+                  <li class="menuItem"><a href="#">Integrations</a></li>
                 </ul>
               </div>
             </li>
-            <li>
-              Company<span><img src="./images/icon-arrow-light.svg" /></span>
+
+            <li class="category-link">
+              <div class="menuTilte">
+                Company<span>
+                  <img
+                    img
+                    class="arrow-light"
+                    src="./images/icon-arrow-light.svg" /><img
+                    class="arrow-dark"
+                    src="./images/icon-arrow-dark.svg"
+                /></span>
+              </div>
+              <div class="menuItems">
+                <ul>
+                  <li class="menuItem"><a href="#">About</a></li>
+                  <li class="menuItem"><a href="#">Team</a></li>
+                  <li class="menuItem"><a href="#">Blog</a></li>
+                  <li class="menuItem"><a href="#">Careers</a></li>
+                </ul>
+              </div>
             </li>
-            <li>
-              Connect<span><img src="./images/icon-arrow-light.svg" /></span>
+
+            <li class="category-link">
+              <div class="menuTilte">
+                Connect<span
+                  ><img
+                    class="arrow-light"
+                    src="./images/icon-arrow-light.svg" /><img
+                    class="arrow-dark"
+                    src="./images/icon-arrow-dark.svg"
+                /></span>
+              </div>
+              <div class="menuItems">
+                <ul>
+                  <li class="menuItem"><a href="#">Contact</a></li>
+                  <li class="menuItem"><a href="#">Newsletter</a></li>
+                  <li class="menuItem"><a href="#">Linkedin</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
 
@@ -56,7 +96,7 @@
           <!-- connexion links -->
           <div class="connexion-links">
             <a href="#"><div class="login">Login</div></a>
-            <a href="#"><div class="signup btn btn-white">Sign Up</div></a>
+            <a href="#"><div class="signup btn btn-colored">Sign Up</div></a>
           </div>
         </nav>
       </div>
@@ -205,5 +245,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

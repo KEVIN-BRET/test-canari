@@ -38,6 +38,13 @@ header {
     padding-right: 4rem;
   }
 }
+@media (max-width: 768px) {
+  header {
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 
 .logo {
   font-size: 2.5rem;
@@ -53,57 +60,124 @@ header {
 }
 .top-header .burgerBtn {
   display: none;
+  position: absolute;
+  top: 4rem;
+  right: 1.5rem;
   cursor: pointer;
 }
-.top-header .all-links {
+.top-header .all-nav-links {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   gap: 3rem;
 }
-.top-header .all-links .nav-links {
+.top-header .all-nav-links .nav-links {
   display: flex;
   gap: 2rem;
 }
-.top-header .all-links .nav-links li {
-  cursor: pointer;
+.top-header .all-nav-links .nav-links .category-link {
   position: relative;
   display: flex;
+  width: 100%;
 }
-.top-header .all-links .nav-links li .menuTilte {
+.top-header .all-nav-links .nav-links .category-link .menuTilte {
   display: flex;
-  color: #FFE0DD;
+  align-items: center;
+  justify-content: center;
+  color: #ffe0dd;
   gap: 0.3rem;
+  cursor: pointer;
 }
-.top-header .all-links .nav-links li .menuItems {
-  position: absolute;
+.top-header .all-nav-links .nav-links .category-link .menuTilte span .arrow-dark {
+  display: none;
+}
+.top-header .all-nav-links .nav-links .category-link .menuTilte span span .arrow-light {
   display: flex;
+}
+.top-header .all-nav-links .nav-links .category-link .menuItems {
+  display: flex;
+  position: absolute;
   top: 2.5rem;
   left: -1.5rem;
   background: hsl(0, 0%, 100%);
   border-radius: 5px;
   padding: 2rem 3rem 1.5rem 1.5rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  gap: 1rem;
 }
-.top-header .all-links .nav-links li .menuItems .menuItem {
+.top-header .all-nav-links .nav-links .category-link .menuItems .menuItem {
   color: black;
   margin-bottom: 0.8rem;
 }
-.top-header .all-links .separationBar {
+.top-header .all-nav-links .separationBar {
   display: none;
 }
-.top-header .all-links .connexion-links {
-  display: flex;
+.top-header .all-nav-links .connexion-links {
   align-items: center;
+  display: flex;
   gap: 2rem;
 }
 @media (max-width: 768px) {
   .top-header .burgerBtn {
     display: flex;
   }
-  .top-header .all-links {
+  .top-header .all-nav-links {
+    position: absolute;
+    color: hsl(208, 49%, 24%);
+    font-size: 1.1rem;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    flex-direction: column;
+    top: 8rem;
+    z-index: 10;
+    width: 90%;
+    padding: 1.5rem;
+    margin: auto;
+  }
+  .top-header .all-nav-links .nav-links {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .top-header .all-nav-links .nav-links .category-link {
+    flex-direction: column;
+  }
+  .top-header .all-nav-links .nav-links .category-link .menuTilte {
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 1.5rem;
+  }
+  .top-header .all-nav-links .nav-links .category-link .menuTilte span .arrow-dark {
+    display: flex;
+  }
+  .top-header .all-nav-links .nav-links .category-link .menuTilte span .arrow-light {
     display: none;
+  }
+  .top-header .all-nav-links .nav-links .category-link .menuItems {
+    position: relative;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    background: rgb(233, 232, 232);
+  }
+  .top-header .all-nav-links .nav-links .category-link .menuItems .menuItem {
+    width: 100%;
+    color: hsl(208, 49%, 24%);
+  }
+  .top-header .all-nav-links .separationBar {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background: rgb(233, 232, 232);
+  }
+  .top-header .all-nav-links .connexion-links {
+    flex-direction: column;
   }
 }
 
@@ -122,7 +196,7 @@ header {
 }
 .content .subtitle {
   margin: 1rem auto;
-  color: #FFE0DD;
+  color: #ffe0dd;
 }
 .content .start-learn {
   display: flex;
@@ -454,13 +528,19 @@ footer .footer-category ul li {
   height: 3rem;
   width: 8rem;
 }
-.btn.btn-white {
+.btn.btn-colored {
   color: hsl(356, 100%, 66%);
   background: hsl(0, 0%, 100%);
 }
+@media (max-width: 768px) {
+  .btn.btn-colored {
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+  }
+}
 .btn.btn-borded {
-  color: #FFE0DD;
-  border: 1px solid #FFE0DD;
+  color: #ffe0dd;
+  border: 1px solid #ffe0dd;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,6 +8,12 @@ header {
   background-size: 220%;
   background-position: left 24% bottom 48%;
   @include responsive-sides-padding;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .logo {
@@ -27,10 +33,14 @@ header {
 
   & .burgerBtn {
     display: none;
+
+    position: absolute;
+    top: 4rem;
+    right: 1.5rem;
     cursor: pointer;
   }
 
-  & .all-links {
+  & .all-nav-links {
     // border: 1px solid yellow;
 
     display: flex;
@@ -43,28 +53,48 @@ header {
       // border: 2px solid green;
       display: flex;
       gap: 2rem;
+      // width: 100%;
 
-      & li {
+      & .category-link {
         // border: 1px solid blue;
-        cursor: pointer;
+
         position: relative;
         display: flex;
+        width: 100%;
 
         & .menuTilte {
           display: flex;
+          align-items: center;
+          justify-content: center;
           color: $text-grey-red;
           gap: 0.3rem;
+          cursor: pointer;
+
+          & span {
+            & .arrow-dark {
+              display: none;
+            }
+
+            & span {
+              & .arrow-light {
+                display: flex;
+              }
+            }
+          }
         }
 
         & .menuItems {
-          position: absolute;
           display: flex;
+          // display: none;
+
+          position: absolute;
           top: 2.5rem;
           left: -1.5rem;
           background: $white;
           border-radius: 5px;
           padding: 2rem 3rem 1.5rem 1.5rem;
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+          gap: 1rem;
 
           & .menuItem {
             color: $black;
@@ -80,19 +110,92 @@ header {
 
     & .connexion-links {
       // border: 2px solid green;
-      display: flex;
       align-items: center;
+      display: flex;
       gap: 2rem;
     }
   }
 
   @media (max-width: 768px) {
+    // border: 2px solid green;
+
     & .burgerBtn {
       display: flex;
     }
 
-    & .all-links {
-      display: none;
+    & .all-nav-links {
+      // display: none;
+
+      position: absolute;
+      color: $very-dark-blue;
+      font-size: 1.1rem;
+      background: white;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      flex-direction: column;
+      top: 8rem;
+
+      z-index: 10;
+
+      // left: 0;
+      width: 90%;
+      padding: 1.5rem;
+      margin: auto;
+
+      & .nav-links {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        width: 100%;
+
+        & .category-link {
+          flex-direction: column;
+
+          & .menuTilte {
+            color: $very-dark-blue;
+            margin-bottom: 1.5rem;
+
+            & span {
+              & .arrow-dark {
+                display: flex;
+              }
+
+              & .arrow-light {
+                display: none;
+              }
+            }
+          }
+
+          & .menuItems {
+            position: relative;
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            box-shadow: none;
+            padding: 1.5rem 0;
+            gap: 1rem;
+            background: $bg-light-grey;
+
+            & .menuItem {
+              width: 100%;
+              color: $very-dark-blue;
+              // background: green;
+            }
+          }
+        }
+      }
+
+      & .separationBar {
+        display: flex;
+        height: 1px;
+        width: 100%;
+        background: $bg-light-grey;
+      }
+
+      & .connexion-links {
+        flex-direction: column;
+      }
     }
   }
 }
