@@ -20,7 +20,7 @@ header {
   position: relative;
   padding: 3rem 9rem;
   border-radius: 0 0 0 6rem;
-  background: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, hsl(13, 100%, 72%) 5%, hsl(353, 100%, 62%) 60%);
+  background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, hsl(13, 100%, 72%) 5%, hsl(353, 100%, 62%) 60%);
   color: hsl(0, 0%, 100%);
   background-size: 220%;
   background-position: left 24% bottom 48%;
@@ -210,7 +210,7 @@ header {
   height: 400px;
   padding: 0 9rem;
   border-radius: 0 6rem 0 6rem;
-  background: url(../images/bg-pattern-circles.svg) -200px 80%/70% no-repeat, linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
+  background: url(./images/bg-pattern-circles.svg) -200px 80%/70% no-repeat, linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
   color: hsl(0, 0%, 100%);
 }
 @media (max-width: 1024px) {
@@ -260,7 +260,7 @@ header {
     margin-top: 14rem;
     margin-bottom: 4rem;
     text-align: center;
-    background: url(../images/bg-pattern-circles.svg) center -230px/contain no-repeat, linear-gradient(180deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
+    background: url(./images/bg-pattern-circles.svg) center -230px/contain no-repeat, linear-gradient(180deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
     background-size: 160%;
   }
   .section2 .picture {
