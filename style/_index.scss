@@ -210,9 +210,6 @@ header {
       $very-dark-gray-blue-gradient 5%,
       $very-dark-desaturated-blue 60%
     );
-  // background-position: left -50% top 80%;
-  // background-repeat: no-repeat;
-  // background-attachment:unset;
   color: $white;
   @include responsive-sides-padding;
 
@@ -262,12 +259,11 @@ header {
         $very-dark-gray-blue-gradient 5%,
         $very-dark-desaturated-blue 60%
       );
-    // background-position: left 50% bottom 500;
-    // background-repeat: no-repeat;
     background-size: 160%;
 
     & .picture {
       width: 100%;
+      max-width: 500px;
       padding-right: 0;
 
       & img {
