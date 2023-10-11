@@ -1,3 +1,4 @@
+Live demo : https://kevin-bret.github.io/test-canari/
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
