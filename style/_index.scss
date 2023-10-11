@@ -16,50 +16,84 @@ header {
   // margin-bottom: 3rem;
 }
 
-.menu-container {
-  border: 1px solid blue;
-
+.top-header {
+  // border: 1px solid blue;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 3rem;
 
-  & nav {
-    border: 1px solid green;
-    border: 1px solid green;
+  & .burgerBtn {
+    display: none;
+    cursor: pointer;
+  }
+
+  & .all-links {
+    // border: 1px solid yellow;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     gap: 3rem;
 
-    & .nav-mobile {
+    & .nav-links {
+      // border: 2px solid green;
+      display: flex;
+      gap: 2rem;
+
+      & li {
+        // border: 1px solid blue;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+
+        & .menuTilte {
+          display: flex;
+          color: $text-grey-red;
+          gap: 0.3rem;
+        }
+
+        & .menuItems {
+          position: absolute;
+          display: flex;
+          top: 2.5rem;
+          left: -1.5rem;
+          background: $white;
+          border-radius: 5px;
+          padding: 2rem 3rem 1.5rem 1.5rem;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+
+          & .menuItem {
+            color: $black;
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+
+    & .separationBar {
       display: none;
     }
 
-    & .nav-desktop {
+    & .connexion-links {
+      // border: 2px solid green;
       display: flex;
-      gap: 1.2rem;
-
-      & li {
-        color: $text-grey-red;
-        display: flex;
-        gap: 0.3rem;
-      }
+      align-items: center;
+      gap: 2rem;
     }
   }
 
-  & .connexion-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
+  @media (max-width: 768px) {
+    & .burgerBtn {
+      display: flex;
+    }
 
-  .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    & .all-links {
+      display: none;
+    }
   }
 }
 
@@ -82,7 +116,7 @@ header {
     color: $text-grey-red;
   }
 
-  & .intro-btn-container {
+  & .start-learn {
     display: flex;
     flex-direction: row;
     gap: 1rem;

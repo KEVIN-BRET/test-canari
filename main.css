@@ -13,6 +13,7 @@
 
 body {
   max-width: 1440px;
+  min-width: 375px;
   margin: auto;
 }
 
@@ -43,42 +44,67 @@ header {
   font-weight: 500;
 }
 
-.menu-container {
-  border: 1px solid blue;
+.top-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-.menu-container nav {
-  border: 1px solid green;
-  border: 1px solid green;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 3rem;
 }
-.menu-container nav .nav-mobile {
+.top-header .burgerBtn {
   display: none;
+  cursor: pointer;
 }
-.menu-container nav .nav-desktop {
+.top-header .all-links {
   display: flex;
-  gap: 1.2rem;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 3rem;
 }
-.menu-container nav .nav-desktop li {
+.top-header .all-links .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.top-header .all-links .nav-links li {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+.top-header .all-links .nav-links li .menuTilte {
+  display: flex;
   color: #FFE0DD;
-  display: flex;
   gap: 0.3rem;
 }
-.menu-container .connexion-container {
+.top-header .all-links .nav-links li .menuItems {
+  position: absolute;
+  display: flex;
+  top: 2.5rem;
+  left: -1.5rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  padding: 2rem 3rem 1.5rem 1.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.top-header .all-links .nav-links li .menuItems .menuItem {
+  color: black;
+  margin-bottom: 0.8rem;
+}
+.top-header .all-links .separationBar {
+  display: none;
+}
+.top-header .all-links .connexion-links {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.menu-container .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 768px) {
+  .top-header .burgerBtn {
+    display: flex;
+  }
+  .top-header .all-links {
+    display: none;
+  }
 }
 
 .content {
@@ -98,7 +124,7 @@ header {
   margin: 1rem auto;
   color: #FFE0DD;
 }
-.content .intro-btn-container {
+.content .start-learn {
   display: flex;
   flex-direction: row;
   gap: 1rem;
