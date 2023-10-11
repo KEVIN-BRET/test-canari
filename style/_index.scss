@@ -8,8 +8,6 @@ header {
   background-size: 220%;
   background-position: left 24% bottom 48%;
   @include responsive-sides-padding;
-
-  
 }
 
 .logo {
@@ -25,7 +23,7 @@ header {
   justify-content: space-between;
 
   & nav {
-border: 1px solid green;
+    border: 1px solid green;
 
     display: flex;
     align-items: center;
@@ -59,8 +57,6 @@ border: 1px solid green;
     flex-direction: column;
     align-items: center;
   }
-
-
 }
 
 .content {
@@ -88,7 +84,6 @@ border: 1px solid green;
     gap: 1rem;
     margin: 1.5rem auto;
   }
-
 }
 
 // SECTION 1 //
@@ -106,6 +101,7 @@ border: 1px solid green;
   & h2 {
     margin: 150px auto;
     position: absolute;
+    // top: 10%;
     color: $very-dark-blue;
     font-family: Overpass;
     font-size: 2.5rem;
@@ -153,6 +149,12 @@ border: 1px solid green;
       & .mobile-picture {
         display: none;
       }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    & h2 {
+      margin-top: 90px;
     }
   }
 
@@ -253,18 +255,18 @@ border: 1px solid green;
     margin-top: 14rem;
     margin-bottom: 4rem;
     text-align: center;
-    
-    background: url(./images/bg-pattern-circles.svg) center -230px/contain no-repeat,
-    linear-gradient(
-      180deg,
-      $very-dark-gray-blue-gradient 5%,
-      $very-dark-desaturated-blue 60%
+
+    background: url(./images/bg-pattern-circles.svg) center -230px / contain no-repeat,
+      linear-gradient(
+        180deg,
+        $very-dark-gray-blue-gradient 5%,
+        $very-dark-desaturated-blue 60%
       );
-      // background-position: left 50% bottom 500;
-      // background-repeat: no-repeat;
-      background-size: 160%;
-      
-      & .picture {
+    // background-position: left 50% bottom 500;
+    // background-repeat: no-repeat;
+    background-size: 160%;
+
+    & .picture {
       width: 100%;
       padding-right: 0;
 
