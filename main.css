@@ -37,6 +37,7 @@ header {
     padding-right: 4rem;
   }
 }
+
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
@@ -49,6 +50,7 @@ header {
   justify-content: space-between;
 }
 .menu-container nav {
+  border: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,11 +59,11 @@ header {
 .menu-container nav .nav-mobile {
   display: none;
 }
-.menu-container nav ul {
+.menu-container nav .nav-desktop {
   display: flex;
   gap: 1.2rem;
 }
-.menu-container nav ul li {
+.menu-container nav .nav-desktop li {
   color: #FFE0DD;
   display: flex;
   gap: 0.3rem;
@@ -170,20 +172,22 @@ header {
 }
 @media (max-width: 768px) {
   .section1 {
-    display: none;
     height: auto;
+    text-align: center;
+    padding: 0 0.5rem;
   }
   .section1 h2 {
+    position: relative;
     margin-top: 100px;
     margin-bottom: 0;
-    position: relative;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .section1 .section1-content {
     flex-direction: column-reverse;
   }
-  .section1 .section1-content text {
+  .section1 .section1-content .text {
     width: 100%;
+    padding: 0 1.5rem;
   }
   .section1 .section1-content .picture {
     width: 100%;
@@ -206,9 +210,7 @@ header {
   height: 400px;
   padding: 0 9rem;
   border-radius: 0 6rem 0 6rem;
-  background: url(../images/bg-pattern-circles.svg), linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
-  background-position: left -50% top 80%;
-  background-repeat: no-repeat;
+  background: url(../images/bg-pattern-circles.svg) -200px 80%/70% no-repeat, linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
   color: hsl(0, 0%, 100%);
 }
 @media (max-width: 1024px) {
@@ -235,7 +237,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 50%;
-  color: hsl(240, 2%, 79%);
 }
 .section2 .text h2 {
   margin-bottom: 2rem;
@@ -244,6 +245,7 @@ header {
   font-weight: 500;
 }
 .section2 .text p {
+  color: hsl(240, 2%, 79%);
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -255,8 +257,11 @@ header {
     justify-content: flex-end;
     padding: 0;
     padding-bottom: 7rem;
-    margin-top: 300px;
+    margin-top: 14rem;
+    margin-bottom: 4rem;
     text-align: center;
+    background: url(../images/bg-pattern-circles.svg) center -230px/contain no-repeat, linear-gradient(180deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
+    background-size: 160%;
   }
   .section2 .picture {
     width: 100%;
