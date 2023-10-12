@@ -89,7 +89,15 @@ header {
           display: flex;
         }
 
+        &:active > .menuItems {
+          display: flex;
+        }
+
         &:hover > .menuTitle span img {
+          transform: rotate(180deg);
+        }
+
+        &:active > .menuTitle span img {
           transform: rotate(180deg);
         }
 

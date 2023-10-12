@@ -100,7 +100,13 @@ header {
 .top-header .all-nav-links .nav-links .category-link:hover > .menuItems {
   display: flex;
 }
+.top-header .all-nav-links .nav-links .category-link:active > .menuItems {
+  display: flex;
+}
 .top-header .all-nav-links .nav-links .category-link:hover > .menuTitle span img {
+  transform: rotate(180deg);
+}
+.top-header .all-nav-links .nav-links .category-link:active > .menuTitle span img {
   transform: rotate(180deg);
 }
 .top-header .all-nav-links .nav-links .category-link .menuItems {
