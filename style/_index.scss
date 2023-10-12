@@ -33,9 +33,14 @@ header {
   & .burgerBtn {
     display: none;
 
-    position: absolute;
+    position: fixed;
     top: 4rem;
     right: 1.5rem;
+    cursor: pointer;
+  }
+
+  & .closeBtn {
+    display: none;
     cursor: pointer;
   }
 
@@ -70,6 +75,10 @@ header {
           gap: 0.3rem;
           margin: 0.5rem 0;
           cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
 
           & span {
             & .arrow-dark {
@@ -117,6 +126,10 @@ header {
           & .menuItem {
             color: $black;
             margin-bottom: 0.8rem;
+
+            &:hover {
+              font-weight: bolder;
+            }
           }
         }
       }
@@ -132,15 +145,20 @@ header {
       display: flex;
       gap: 2rem;
 
-      &.btn-colored {
-        color: $light-red;
-        background: $white;
-      }
+      // &.btn-colored {
+      //   color: $light-red;
+      //   background: $white;
+      // }
     }
   }
 
   @media (max-width: 768px) {
     // border: 2px solid green;
+
+    &.logo {
+      font-size: 1rem;
+      font-weight: 500;
+    }
 
     & .burgerBtn {
       display: flex;
@@ -149,7 +167,8 @@ header {
     & .all-nav-links {
       display: none;
 
-      position: absolute;
+      position: fixed;
+      z-index: 10;
       color: $very-dark-blue;
       font-size: 1.1rem;
       background: white;
@@ -245,9 +264,9 @@ header {
   align-items: center;
   margin-top: 8rem;
   margin-bottom: 6rem;
+  text-align: center;
 
   & .title {
-    text-align: center;
     font-size: 4rem;
     font-weight: 500;
     font-family: Overpass;
@@ -263,6 +282,16 @@ header {
     flex-direction: row;
     gap: 1rem;
     margin: 1.5rem auto;
+  }
+
+  @media (max-width: 768px) {
+    & .title {
+      font-size: 2.3rem;
+    }
+
+    & .subtitle {
+      margin: 1rem 1rem;
+    }
   }
 }
 
@@ -567,6 +596,10 @@ footer {
       & li {
         color: $grayish-blue;
         margin-bottom: 1.1rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

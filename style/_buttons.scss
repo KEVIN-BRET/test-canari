@@ -11,10 +11,20 @@
   &.btn-colored {
     color: $light-red;
     background: $white;
+
+    &:hover {
+      background: rgb(255, 138, 157);
+      color: $white;
+    }
   }
 
   &.btn-borded {
     color: $text-grey-red;
     border: 1px solid $text-grey-red;
+
+    &:hover {
+      background: $white;
+      color: $light-red;
+    }
   }
 }

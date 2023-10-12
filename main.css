@@ -60,9 +60,13 @@ header {
 }
 .top-header .burgerBtn {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 4rem;
   right: 1.5rem;
+  cursor: pointer;
+}
+.top-header .closeBtn {
+  display: none;
   cursor: pointer;
 }
 .top-header .all-nav-links {
@@ -90,6 +94,9 @@ header {
   gap: 0.3rem;
   margin: 0.5rem 0;
   cursor: pointer;
+}
+.top-header .all-nav-links .nav-links .category-link .menuTitle:hover {
+  text-decoration: underline;
 }
 .top-header .all-nav-links .nav-links .category-link .menuTitle span .arrow-dark {
   display: none;
@@ -126,6 +133,9 @@ header {
   color: black;
   margin-bottom: 0.8rem;
 }
+.top-header .all-nav-links .nav-links .category-link .menuItems .menuItem:hover {
+  font-weight: bolder;
+}
 .top-header .all-nav-links .separationBar {
   display: none;
 }
@@ -134,17 +144,18 @@ header {
   display: flex;
   gap: 2rem;
 }
-.top-header .all-nav-links .connexion-links.btn-colored {
-  color: hsl(356, 100%, 66%);
-  background: hsl(0, 0%, 100%);
-}
 @media (max-width: 768px) {
+  .top-header.logo {
+    font-size: 1rem;
+    font-weight: 500;
+  }
   .top-header .burgerBtn {
     display: flex;
   }
   .top-header .all-nav-links {
     display: none;
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     color: hsl(208, 49%, 24%);
     font-size: 1.1rem;
     background: white;
@@ -218,9 +229,9 @@ header {
   align-items: center;
   margin-top: 8rem;
   margin-bottom: 6rem;
+  text-align: center;
 }
 .content .title {
-  text-align: center;
   font-size: 4rem;
   font-weight: 500;
   font-family: Overpass;
@@ -234,6 +245,14 @@ header {
   flex-direction: row;
   gap: 1rem;
   margin: 1.5rem auto;
+}
+@media (max-width: 768px) {
+  .content .title {
+    font-size: 2.3rem;
+  }
+  .content .subtitle {
+    margin: 1rem 1rem;
+  }
 }
 
 .section1 {
@@ -535,6 +554,9 @@ footer .footer-category ul li {
   color: hsl(240, 2%, 79%);
   margin-bottom: 1.1rem;
 }
+footer .footer-category ul li:hover {
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
@@ -563,9 +585,17 @@ footer .footer-category ul li {
   color: hsl(356, 100%, 66%);
   background: hsl(0, 0%, 100%);
 }
+.btn.btn-colored:hover {
+  background: rgb(255, 138, 157);
+  color: hsl(0, 0%, 100%);
+}
 .btn.btn-borded {
   color: #ffe0dd;
   border: 1px solid #ffe0dd;
+}
+.btn.btn-borded:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
 }
 
 /*# sourceMappingURL=main.css.map */
