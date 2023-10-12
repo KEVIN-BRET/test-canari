@@ -11,15 +11,6 @@
   &.btn-colored {
     color: $light-red;
     background: $white;
-
-    @media (max-width: 768px) {
-      color: $white;
-      background: linear-gradient(
-        90deg,
-        $very-light-red-gradient 0%,
-        $light-red-gradient 100%
-      );
-    }
   }
 
   &.btn-borded {
