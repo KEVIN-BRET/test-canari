@@ -153,7 +153,6 @@ header {
     flex-direction: column;
     top: 8rem;
     gap: 1.5rem;
-    z-index: 10;
     width: 90%;
     padding: 1.5rem;
     margin: auto;

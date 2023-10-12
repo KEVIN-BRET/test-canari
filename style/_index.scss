@@ -19,7 +19,6 @@ header {
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
-  // margin-bottom: 3rem;
 }
 
 .top-header {
@@ -104,8 +103,6 @@ header {
         & .menuItems {
           display: none;
 
-          // display: flex;
-
           flex-direction: column;
           position: absolute;
           top: 1.5rem;
@@ -115,7 +112,6 @@ header {
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
           gap: 1rem;
           margin: 1rem 0;
-
           padding: 2rem 3rem 1.5rem 1.5rem;
 
           & .menuItem {
@@ -162,10 +158,6 @@ header {
       flex-direction: column;
       top: 8rem;
       gap: 1.5rem;
-
-      z-index: 10;
-
-      // left: 0;
       width: 90%;
       padding: 1.5rem;
       margin: auto;
