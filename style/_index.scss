@@ -16,6 +16,12 @@ header {
   }
 }
 
+.inside {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+}
+
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
@@ -30,7 +36,7 @@ header {
   justify-content: space-between;
   gap: 3rem;
 
-  & .burgerBtn {
+  .burgerBtn {
     display: none;
 
     position: fixed;
@@ -39,12 +45,12 @@ header {
     cursor: pointer;
   }
 
-  & .closeBtn {
+  .closeBtn {
     display: none;
     cursor: pointer;
   }
 
-  & .all-nav-links {
+  .all-nav-links {
     // border: 1px solid yellow;
 
     display: flex;
@@ -54,18 +60,18 @@ header {
     justify-content: space-between;
     gap: 3rem;
 
-    & .nav-links {
+    .nav-links {
       // border: 2px solid green;
       display: flex;
       gap: 2rem;
 
-      & .category-link {
+      .category-link {
         // border: 1px solid blue;
         position: relative;
         display: flex;
         width: 100%;
 
-        & .menuTitle {
+        .menuTitle {
           // border: 1px solid green;
           height: 100%;
           display: flex;
@@ -80,13 +86,13 @@ header {
             text-decoration: underline;
           }
 
-          & span {
-            & .arrow-dark {
+          span {
+            .arrow-dark {
               display: none;
             }
 
-            & span {
-              & .arrow-light {
+            span {
+              .arrow-light {
                 display: flex;
               }
             }
@@ -109,7 +115,7 @@ header {
           transform: rotate(180deg);
         }
 
-        & .menuItems {
+        .menuItems {
           display: none;
 
           flex-direction: column;
@@ -123,7 +129,7 @@ header {
           margin: 1rem 0;
           padding: 2rem 3rem 1.5rem 1.5rem;
 
-          & .menuItem {
+          .menuItem {
             color: $black;
             margin-bottom: 0.8rem;
 
@@ -135,36 +141,31 @@ header {
       }
     }
 
-    & .separationBar {
+    .separationBar {
       display: none;
     }
 
-    & .connexion-links {
+    .connexion-links {
       // border: 2px solid green;
       align-items: center;
       display: flex;
       gap: 2rem;
-
-      // &.btn-colored {
-      //   color: $light-red;
-      //   background: $white;
-      // }
     }
   }
 
   @media (max-width: 768px) {
     // border: 2px solid green;
 
-    &.logo {
+    .logo {
       font-size: 1rem;
       font-weight: 500;
     }
 
-    & .burgerBtn {
+    .burgerBtn {
       display: flex;
     }
 
-    & .all-nav-links {
+    .all-nav-links {
       display: none;
 
       position: fixed;
@@ -181,7 +182,7 @@ header {
       padding: 1.5rem;
       margin: auto;
 
-      & .nav-links {
+      .nav-links {
         flex-direction: column;
         align-items: center;
         position: relative;
@@ -189,25 +190,25 @@ header {
         width: 100%;
         gap: 0;
 
-        & .category-link {
+        .category-link {
           flex-direction: column;
 
-          & .menuTitle {
+          .menuTitle {
             color: $very-dark-blue;
             // margin-bottom: 1.5rem;
 
-            & span {
-              & .arrow-dark {
+            span {
+              .arrow-dark {
                 display: flex;
               }
 
-              & .arrow-light {
+              .arrow-light {
                 display: none;
               }
             }
           }
 
-          & .menuItems {
+          .menuItems {
             position: relative;
             flex-direction: column;
             top: 0;
@@ -217,7 +218,7 @@ header {
             gap: 1rem;
             background: $bg-light-grey;
 
-            & .menuItem {
+            .menuItem {
               width: 100%;
               color: $very-dark-blue;
               // background: green;
@@ -226,21 +227,21 @@ header {
         }
       }
 
-      & .separationBar {
+      .separationBar {
         display: flex;
         height: 1px;
         width: 100%;
         background: $bg-light-grey;
       }
 
-      & .connexion-links {
+      .connexion-links {
         flex-direction: column;
         margin: 0.8rem;
         gap: 1.5rem;
 
         // background: green;
 
-        & .btn-colored {
+        .btn-colored {
           color: $white;
           background: linear-gradient(
             90deg,
@@ -266,18 +267,18 @@ header {
   margin-bottom: 6rem;
   text-align: center;
 
-  & .title {
+  .title {
     font-size: 4rem;
     font-weight: 500;
     font-family: Overpass;
   }
 
-  & .subtitle {
+  .subtitle {
     margin: 1rem auto;
     color: $text-grey-red;
   }
 
-  & .start-learn {
+  .start-learn {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -285,11 +286,11 @@ header {
   }
 
   @media (max-width: 768px) {
-    & .title {
+    .title {
       font-size: 2.3rem;
     }
 
-    & .subtitle {
+    .subtitle {
       margin: 1rem 1rem;
     }
   }
@@ -304,10 +305,10 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 0 9rem;
-  overflow: hidden;
+  // overflow: hidden;
   @include responsive-sides-padding;
 
-  & h2 {
+  h2 {
     margin: 150px auto;
     position: absolute;
     color: $very-dark-blue;
@@ -315,26 +316,26 @@ header {
     font-size: 2.5rem;
   }
 
-  & .section1-content {
+  .section1-content {
     height: 100%;
     display: flex;
     flex-direction: row;
 
-    & .text {
+    .text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 50%;
       margin-top: 4rem;
 
-      & h3 {
+      h3 {
         color: $very-dark-blue;
         font-family: Overpass;
         font-size: 1.8rem;
         margin: 1.5rem 0;
       }
 
-      & p {
+      p {
         color: $very-dark-grayish-blue;
         font-size: 1rem;
         line-height: 2rem;
@@ -342,26 +343,26 @@ header {
       }
     }
 
-    & .picture {
+    .picture {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       width: 50%;
       padding: 5rem;
 
-      & .desktop-picture {
+      .desktop-picture {
         display: flex;
         position: absolute;
       }
 
-      & .mobile-picture {
+      .mobile-picture {
         display: none;
       }
     }
   }
 
   @media (max-width: 1100px) {
-    & h2 {
+    h2 {
       margin-top: 90px;
     }
   }
@@ -371,32 +372,32 @@ header {
     text-align: center;
     padding: 0 0.5rem;
 
-    & h2 {
+    h2 {
       position: relative;
       margin-top: 100px;
       margin-bottom: 0;
       font-size: 1.7rem;
     }
 
-    & .section1-content {
+    .section1-content {
       flex-direction: column-reverse;
 
-      & .text {
+      .text {
         width: 100%;
         padding: 0 1.5rem;
       }
 
-      & .picture {
+      .picture {
         width: 100%;
         justify-content: center;
         padding: 1.5rem 0rem;
 
-        & .desktop-picture {
+        .desktop-picture {
           display: none;
           position: absolute;
         }
 
-        & .mobile-picture {
+        .mobile-picture {
           display: flex;
           margin: 1rem auto;
         }
@@ -421,7 +422,7 @@ header {
   color: $white;
   @include responsive-sides-padding;
 
-  & .picture {
+  .picture {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -430,19 +431,19 @@ header {
     padding-right: 1.5rem;
   }
 
-  & .text {
+  .text {
     display: flex;
     flex-direction: column;
     width: 50%;
 
-    & h2 {
+    h2 {
       margin-bottom: 2rem;
       font-family: Overpass;
       font-size: 2.5rem;
       font-weight: 500;
     }
 
-    & p {
+    p {
       color: $grayish-blue;
       font-size: 1rem;
       line-height: 2rem;
@@ -469,21 +470,21 @@ header {
       );
     background-size: 160%;
 
-    & .picture {
+    .picture {
       width: 100%;
       max-width: 500px;
       padding-right: 0;
 
-      & img {
+      img {
         width: 100%;
       }
     }
 
-    & .text {
+    .text {
       width: 100%;
       padding: 0 2rem;
 
-      & h2 {
+      h2 {
         margin-bottom: 1rem;
       }
     }
@@ -502,25 +503,25 @@ header {
   overflow: hidden;
   @include responsive-sides-padding;
 
-  & .picture {
+  .picture {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 50%;
     padding-right: 1.5rem;
 
-    & .mobile-picture {
+    .mobile-picture {
       display: none;
     }
   }
 
-  & .text {
+  .text {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-top: 4rem;
 
-    & h3 {
+    h3 {
       color: $very-dark-blue;
       font-family: Overpass;
       font-size: 1.8rem;
@@ -528,7 +529,7 @@ header {
       width: 100%;
     }
 
-    & p {
+    p {
       color: $very-dark-grayish-blue;
       font-size: 1rem;
       line-height: 2rem;
@@ -544,21 +545,21 @@ header {
     line-height: 1rem;
     text-align: center;
 
-    & .picture {
+    .picture {
       width: 100%;
       padding-right: 0;
       justify-content: center;
 
-      & .mobile-picture {
+      .mobile-picture {
         display: flex;
       }
 
-      & .desktop-picture {
+      .desktop-picture {
         display: none;
       }
     }
 
-    & .text {
+    .text {
       width: 100%;
       margin-top: 1.5rem;
       margin-bottom: 2.5rem;
@@ -577,23 +578,23 @@ footer {
   align-items: flex-start;
   @include responsive-sides-padding;
 
-  & .footer-category {
+  .footer-category {
     display: flex;
     flex-direction: column;
     width: 25%;
 
-    & p {
+    p {
       font-weight: 500;
       margin-bottom: 2.5rem;
       margin-top: 1.8rem;
     }
 
-    & ul {
+    ul {
       display: flex;
       flex-direction: column;
       // margin-bottom: 1.8rem;
 
-      & li {
+      li {
         color: $grayish-blue;
         margin-bottom: 1.1rem;
 
@@ -607,12 +608,12 @@ footer {
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    & .logo {
+    .logo {
       margin-bottom: 3rem;
     }
-    & .footer-category {
+    .footer-category {
       align-items: center;
-      & ul {
+      ul {
         align-items: center;
       }
     }

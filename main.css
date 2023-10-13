@@ -12,7 +12,6 @@
 }
 
 body {
-  max-width: 1440px;
   min-width: 375px;
   margin: auto;
 }
@@ -44,6 +43,12 @@ header {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+}
+
+.inside {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .logo {
@@ -145,7 +150,7 @@ header {
   gap: 2rem;
 }
 @media (max-width: 768px) {
-  .top-header.logo {
+  .top-header .logo {
     font-size: 1rem;
     font-weight: 500;
   }
@@ -263,7 +268,6 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 0 9rem;
-  overflow: hidden;
 }
 @media (max-width: 1024px) {
   .section1 {

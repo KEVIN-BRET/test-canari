@@ -1,23 +1,21 @@
 *,
 ::before,
 ::after {
+  //   border: 1px solid pink;
 
-    // border: 1px solid pink;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-family: "Ubuntu";
-    font-style: normal;
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
-
+  font-family: "Ubuntu";
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
 }
 
 body {
-    max-width: 1440px;
-    min-width: 375px;
-    margin: auto;
+  // max-width: 1440px;
+  min-width: 375px;
+  margin: auto;
 }

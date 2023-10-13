@@ -1,5 +1,5 @@
 const burgerBtn = document.querySelector(".burgerBtn");
-const closeBtn = document.querySelector(".closeBtn");
+// const closeBtn = document.querySelector(".closeBtn");
 const allNavLinks = document.querySelector(".all-nav-links");
 
 // Open/close mobile menu :
