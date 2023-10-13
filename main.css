@@ -1,19 +1,156 @@
-*,
-::before,
-::after {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   box-sizing: border-box;
-  font-family: "Ubuntu";
-  font-style: normal;
   text-decoration: none;
-  list-style: none;
   color: inherit;
+  list-style: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+input,
+textarea,
+button,
+select,
+span,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
+  line-height: 1;
+  font-family: "Ubuntu";
   min-width: 375px;
-  margin: auto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
 }
 
 header {
@@ -260,7 +397,7 @@ header {
   }
 }
 
-.section1 {
+.designed {
   position: relative;
   height: 1010px;
   padding-top: 8rem;
@@ -270,102 +407,102 @@ header {
   padding: 0 9rem;
 }
 @media (max-width: 1024px) {
-  .section1 {
+  .designed {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 @media (max-width: 900px) {
-  .section1 {
+  .designed {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
-.section1 h2 {
+.designed h2 {
   margin: 150px auto;
   position: absolute;
   color: hsl(208, 49%, 24%);
   font-family: Overpass;
   font-size: 2.5rem;
 }
-.section1 .section1-content {
+.designed .content {
   height: 100%;
   display: flex;
   flex-direction: row;
 }
-.section1 .section1-content .text {
+.designed .content .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
   margin-top: 4rem;
 }
-.section1 .section1-content .text h3 {
+.designed .content .text h3 {
   color: hsl(208, 49%, 24%);
   font-family: Overpass;
   font-size: 1.8rem;
   margin: 1.5rem 0;
 }
-.section1 .section1-content .text p {
+.designed .content .text p {
   color: hsl(207, 13%, 34%);
   font-size: 1rem;
   line-height: 2rem;
   margin-bottom: 3rem;
 }
-.section1 .section1-content .picture {
+.designed .content .picture {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 50%;
   padding: 5rem;
 }
-.section1 .section1-content .picture .desktop-picture {
+.designed .content .picture .desktop-picture {
   display: flex;
   position: absolute;
 }
-.section1 .section1-content .picture .mobile-picture {
+.designed .content .picture .mobile-picture {
   display: none;
 }
 @media (max-width: 1100px) {
-  .section1 h2 {
+  .designed h2 {
     margin-top: 90px;
   }
 }
 @media (max-width: 768px) {
-  .section1 {
+  .designed {
     height: auto;
     text-align: center;
     padding: 0 0.5rem;
   }
-  .section1 h2 {
+  .designed h2 {
     position: relative;
     margin-top: 100px;
     margin-bottom: 0;
     font-size: 1.7rem;
   }
-  .section1 .section1-content {
+  .designed .section1-content {
     flex-direction: column-reverse;
   }
-  .section1 .section1-content .text {
+  .designed .section1-content .text {
     width: 100%;
     padding: 0 1.5rem;
   }
-  .section1 .section1-content .picture {
+  .designed .section1-content .picture {
     width: 100%;
     justify-content: center;
     padding: 1.5rem 0rem;
   }
-  .section1 .section1-content .picture .desktop-picture {
+  .designed .section1-content .picture .desktop-picture {
     display: none;
     position: absolute;
   }
-  .section1 .section1-content .picture .mobile-picture {
+  .designed .section1-content .picture .mobile-picture {
     display: flex;
     margin: 1rem auto;
   }
 }
 
-.section2 {
+.phone {
   display: flex;
   align-items: center;
   height: 400px;
@@ -375,18 +512,18 @@ header {
   color: hsl(0, 0%, 100%);
 }
 @media (max-width: 1024px) {
-  .section2 {
+  .phone {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 @media (max-width: 900px) {
-  .section2 {
+  .phone {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
-.section2 .picture {
+.phone .picture {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -394,24 +531,24 @@ header {
   padding-top: 40px;
   padding-right: 1.5rem;
 }
-.section2 .text {
+.phone .text {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.section2 .text h2 {
+.phone .text h2 {
   margin-bottom: 2rem;
   font-family: Overpass;
   font-size: 2.5rem;
   font-weight: 500;
 }
-.section2 .text p {
+.phone .text p {
   color: hsl(240, 2%, 79%);
   font-size: 1rem;
   line-height: 2rem;
 }
 @media (max-width: 768px) {
-  .section2 {
+  .phone {
     height: 625px;
     flex-direction: column;
     align-items: center;
@@ -424,24 +561,24 @@ header {
     background: url(./images/bg-pattern-circles.svg) center -230px/contain no-repeat, linear-gradient(180deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
     background-size: 160%;
   }
-  .section2 .picture {
+  .phone .picture {
     width: 100%;
     max-width: 500px;
     padding-right: 0;
   }
-  .section2 .picture img {
+  .phone .picture img {
     width: 100%;
   }
-  .section2 .text {
+  .phone .text {
     width: 100%;
     padding: 0 2rem;
   }
-  .section2 .text h2 {
+  .phone .text h2 {
     margin-bottom: 1rem;
   }
 }
 
-.section3 {
+.laptop {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -452,41 +589,41 @@ header {
   overflow: hidden;
 }
 @media (max-width: 1024px) {
-  .section3 {
+  .laptop {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 @media (max-width: 900px) {
-  .section3 {
+  .laptop {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
-.section3 .picture {
+.laptop .picture {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
   padding-right: 1.5rem;
 }
-.section3 .picture .mobile-picture {
+.laptop .picture .mobile-picture {
   display: none;
 }
-.section3 .text {
+.laptop .text {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-top: 4rem;
 }
-.section3 .text h3 {
+.laptop .text h3 {
   color: hsl(208, 49%, 24%);
   font-family: Overpass;
   font-size: 1.8rem;
   margin: 1.5rem 0;
   width: 100%;
 }
-.section3 .text p {
+.laptop .text p {
   color: hsl(207, 13%, 34%);
   font-size: 1rem;
   line-height: 2rem;
@@ -494,25 +631,25 @@ header {
   width: 100%;
 }
 @media (max-width: 768px) {
-  .section3 {
+  .laptop {
     flex-direction: column;
     height: auto;
     padding: 0 1.5rem;
     line-height: 1rem;
     text-align: center;
   }
-  .section3 .picture {
+  .laptop .picture {
     width: 100%;
     padding-right: 0;
     justify-content: center;
   }
-  .section3 .picture .mobile-picture {
+  .laptop .picture .mobile-picture {
     display: flex;
   }
-  .section3 .picture .desktop-picture {
+  .laptop .picture .desktop-picture {
     display: none;
   }
-  .section3 .text {
+  .laptop .text {
     width: 100%;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
