@@ -168,7 +168,7 @@ header .inside {
   justify-content: space-between;
   width: 100%;
   padding: 4rem 9rem 4rem 9rem;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 header .inside .mobile-menu-btn {
   display: flex;
@@ -184,21 +184,18 @@ header .inside .mobile-menu-btn .closeBtn {
   cursor: pointer;
 }
 header .inside .menu-container {
-  border: 1px solid blue;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
   width: 100%;
+  gap: 2rem;
 }
 header .inside .menu-container .nav {
-  border: 1px solid yellow;
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
-  gap: 3rem;
 }
 header .inside .menu-container .nav .nav-links {
   display: flex;
@@ -206,7 +203,6 @@ header .inside .menu-container .nav .nav-links {
   height: 100%;
 }
 header .inside .menu-container .nav .nav-links .category-link {
-  border: 1px solid blue;
   position: relative;
   display: flex;
   height: 100%;
@@ -261,7 +257,6 @@ header .inside .menu-container .nav .nav-links .category-link .menuItems .menuIt
   font-weight: bolder;
 }
 header .inside .menu-container .connexion {
-  border: 1px solid yellow;
   align-items: center;
   display: flex;
   color: #ffe0dd;
@@ -492,6 +487,7 @@ footer .inside .footer-category ul li:hover {
     cursor: pointer;
   }
   header .inside .menu-container {
+    display: none;
     position: fixed;
     z-index: 10;
     color: hsl(208, 49%, 24%);
@@ -506,27 +502,38 @@ footer .inside .footer-category ul li:hover {
     padding: 1.5rem;
     margin: auto;
   }
-  header .inside .menu-container .nav-links {
+  header .inside .menu-container.mobile-menu {
+    display: flex;
+    opacity: 1;
+  }
+  header .inside .menu-container .nav {
+    gap: 1rem;
+    border-bottom: 1px solid rgb(233, 232, 232);
+  }
+  header .inside .menu-container .nav .nav-links {
     flex-direction: column;
     align-items: center;
     position: relative;
     text-align: center;
     width: 100%;
-    gap: 0;
+    gap: 0rem;
   }
-  header .inside .menu-container .nav-links .category-link {
+  header .inside .menu-container .nav .nav-links .category-link {
     flex-direction: column;
+    width: 100%;
   }
-  header .inside .menu-container .nav-links .category-link .menuTitle {
+  header .inside .menu-container .nav .nav-links .category-link .menuTitle {
+    margin: auto;
     color: hsl(208, 49%, 24%);
+    margin-bottom: 1rem;
   }
-  header .inside .menu-container .nav-links .category-link .menuTitle span .arrow-dark {
+  header .inside .menu-container .nav .nav-links .category-link .menuTitle span .arrow-dark {
     display: flex;
   }
-  header .inside .menu-container .nav-links .category-link .menuTitle span .arrow-light {
+  header .inside .menu-container .nav .nav-links .category-link .menuTitle span .arrow-light {
     display: none;
   }
-  header .inside .menu-container .nav-links .category-link .menuItems {
+  header .inside .menu-container .nav .nav-links .category-link .menuItems {
     position: relative;
     flex-direction: column;
     top: 0;
@@ -536,16 +543,17 @@ footer .inside .footer-category ul li:hover {
     gap: 1rem;
     background: rgb(233, 232, 232);
   }
-  header .inside .menu-container .nav-links .category-link .menuItems .menuItem {
+  header .inside .menu-container .nav .nav-links .category-link .menuItems .menuItem {
     width: 100%;
     color: hsl(208, 49%, 24%);
   }
-  header .inside .menu-container .connexion-links {
+  header .inside .menu-container .connexion {
     flex-direction: column;
     margin: 0.8rem;
     gap: 1.5rem;
+    color: hsl(208, 49%, 24%);
   }
-  header .inside .menu-container .connexion-links .btn-colored {
+  header .inside .menu-container .connexion .btn-colored {
     color: hsl(0, 0%, 100%);
     background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 1000%);
   }
