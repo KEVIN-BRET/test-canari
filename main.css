@@ -122,7 +122,6 @@ a {
 body {
   line-height: 1;
   font-family: "Ubuntu";
-  min-width: 375px;
 }
 
 ol,
@@ -169,6 +168,7 @@ header .inside {
   width: 100%;
   padding: 4rem 9rem 4rem 9rem;
   gap: 1.5rem;
+  transition: all 0.3s ease;
 }
 header .inside .mobile-menu-btn {
   display: flex;
@@ -206,6 +206,7 @@ header .inside .menu-container .nav .nav-links .category-link {
   position: relative;
   display: flex;
   height: 100%;
+  transition: all 0.3s ease;
 }
 header .inside .menu-container .nav .nav-links .category-link .menuTitle {
   display: flex;
@@ -214,6 +215,7 @@ header .inside .menu-container .nav .nav-links .category-link .menuTitle {
   color: #ffe0dd;
   gap: 0.3rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 header .inside .menu-container .nav .nav-links .category-link .menuTitle:hover {
   text-decoration: underline;
@@ -252,6 +254,7 @@ header .inside .menu-container .nav .nav-links .category-link .menuItems {
 header .inside .menu-container .nav .nav-links .category-link .menuItems .menuItem {
   color: black;
   margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
 }
 header .inside .menu-container .nav .nav-links .category-link .menuItems .menuItem:hover {
   font-weight: bolder;
@@ -261,6 +264,12 @@ header .inside .menu-container .connexion {
   display: flex;
   color: #ffe0dd;
   gap: 2rem;
+}
+header.scrolled .inside {
+  background: linear-gradient(90deg, hsl(13, 100%, 72%) 5%, hsl(353, 100%, 62%) 60%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .intro {
@@ -391,6 +400,7 @@ header .inside .menu-container .connexion {
 }
 
 .laptop .inside {
+  display: flex;
   padding: 14rem 9rem;
   flex-direction: row;
   position: relative;
@@ -568,6 +578,7 @@ footer .inside .footer-category ul li:hover {
     text-align: center;
     padding: 0 0.5rem;
     margin: 1rem auto;
+    padding: 0 2rem;
   }
   .designed .inside .title {
     font-size: 2rem;
@@ -580,7 +591,6 @@ footer .inside .footer-category ul li:hover {
   .designed .inside .content .text {
     text-align: center;
     width: 100%;
-    padding: 0 1.5rem;
   }
   .designed .inside .content .text h3 {
     padding: 0 3rem;
@@ -592,11 +602,12 @@ footer .inside .footer-category ul li:hover {
   }
   .designed .inside .content .picture .desktop-picture {
     display: none;
-    position: absolute;
   }
   .designed .inside .content .picture .mobile-picture {
+    position: relative;
     display: flex;
     margin: 1rem auto;
+    width: 100%;
   }
   .phone {
     text-align: center;
@@ -635,6 +646,7 @@ footer .inside .footer-category ul li:hover {
     padding: 0rem 9rem;
     flex-direction: column;
     align-items: center;
+    padding: 0 2rem;
   }
   .laptop .inside .picture {
     position: relative;
