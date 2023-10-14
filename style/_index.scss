@@ -201,7 +201,7 @@ header {
 
 // SECTION 2 //
 .designed {
-  overflow: hidden;
+  // overflow: hidden;
   .inside {
     position: relative;
     display: flex;
@@ -322,7 +322,7 @@ header {
 
 // SECTION 4 //
 .laptop {
-  overflow: hidden;
+  // overflow: hidden;
   .inside {
     display: flex;
     padding: 14rem 9rem;
@@ -416,27 +416,12 @@ footer {
 
 //* MEDIA QUERIES *//
 
-@media (max-width: 1100px) {
-  .designed {
-    h2 {
-      margin-top: 90px;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  // HEADER //
+@media (max-width: 1000px) {
   header {
     .inside {
       // border: 2px solid green;
 
       padding: 2.5rem 1.5rem 2.5rem 1.5em;
-
-      .logo {
-        font-size: 2rem;
-        font-weight: 500;
-      }
-
       .mobile-menu-btn {
         display: flex;
 
@@ -471,6 +456,57 @@ footer {
           display: flex;
           opacity: 1;
         }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    // HEADER //
+    header {
+      .inside {
+        // border: 2px solid green;
+
+        // padding: 2.5rem 1.5rem 2.5rem 1.5em;
+
+        .logo {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+
+        // .mobile-menu-btn {
+        //   display: flex;
+
+        //   .burgerBtn {
+        //     display: flex;
+        //   }
+
+        //   .closeBtn {
+        //     display: none;
+        //     cursor: pointer;
+        //   }
+        // }
+
+        // .menu-container {
+        //   display: none;
+
+        //   position: absolute;
+        //   left: center;
+
+        //   color: $very-dark-blue;
+        //   font-size: 1.1rem;
+        //   background: white;
+        //   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        //   border-radius: 5px;
+        //   flex-direction: column;
+        //   top: 6rem;
+        //   gap: 1.5rem;
+        //   width: 90%;
+        //   padding: 1.5rem;
+
+        //   &.mobile-menu {
+        //     display: flex;
+        //     opacity: 1;
+        //   }
 
         .nav {
           gap: 1rem;

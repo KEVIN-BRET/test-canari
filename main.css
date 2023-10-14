@@ -304,9 +304,6 @@ header.scrolled .inside {
   margin: 1.5rem auto;
 }
 
-.designed {
-  overflow: hidden;
-}
 .designed .inside {
   position: relative;
   display: flex;
@@ -402,9 +399,6 @@ header.scrolled .inside {
   line-height: 2rem;
 }
 
-.laptop {
-  overflow: hidden;
-}
 .laptop .inside {
   display: flex;
   padding: 14rem 9rem;
@@ -479,18 +473,9 @@ footer .inside .footer-category ul li:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1100px) {
-  .designed h2 {
-    margin-top: 90px;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   header .inside {
     padding: 2.5rem 1.5rem 2.5rem 1.5em;
-  }
-  header .inside .logo {
-    font-size: 2rem;
-    font-weight: 500;
   }
   header .inside .mobile-menu-btn {
     display: flex;
@@ -521,11 +506,17 @@ footer .inside .footer-category ul li:hover {
     display: flex;
     opacity: 1;
   }
-  header .inside .menu-container .nav {
+}
+@media (max-width: 1000px) and (max-width: 768px) {
+  header .inside .logo {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  header .inside .nav {
     gap: 1rem;
     border-bottom: 1px solid rgb(233, 232, 232);
   }
-  header .inside .menu-container .nav .nav-links {
+  header .inside .nav .nav-links {
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -533,22 +524,22 @@ footer .inside .footer-category ul li:hover {
     width: 100%;
     gap: 0rem;
   }
-  header .inside .menu-container .nav .nav-links .category-link {
+  header .inside .nav .nav-links .category-link {
     flex-direction: column;
     width: 100%;
   }
-  header .inside .menu-container .nav .nav-links .category-link .menuTitle {
+  header .inside .nav .nav-links .category-link .menuTitle {
     margin: auto;
     color: hsl(208, 49%, 24%);
     margin-bottom: 1rem;
   }
-  header .inside .menu-container .nav .nav-links .category-link .menuTitle span .arrow-dark {
+  header .inside .nav .nav-links .category-link .menuTitle span .arrow-dark {
     display: flex;
   }
-  header .inside .menu-container .nav .nav-links .category-link .menuTitle span .arrow-light {
+  header .inside .nav .nav-links .category-link .menuTitle span .arrow-light {
     display: none;
   }
-  header .inside .menu-container .nav .nav-links .category-link .menuItems {
+  header .inside .nav .nav-links .category-link .menuItems {
     position: relative;
     flex-direction: column;
     top: 0;
@@ -558,20 +549,22 @@ footer .inside .footer-category ul li:hover {
     gap: 1rem;
     background: rgb(233, 232, 232);
   }
-  header .inside .menu-container .nav .nav-links .category-link .menuItems .menuItem {
+  header .inside .nav .nav-links .category-link .menuItems .menuItem {
     width: 100%;
     color: hsl(208, 49%, 24%);
   }
-  header .inside .menu-container .connexion {
+  header .inside .connexion {
     flex-direction: column;
     margin: 0.8rem;
     gap: 1.5rem;
     color: hsl(208, 49%, 24%);
   }
-  header .inside .menu-container .connexion .btn-colored {
+  header .inside .connexion .btn-colored {
     color: hsl(0, 0%, 100%);
     background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 1000%);
   }
+}
+@media (max-width: 1000px) {
   .intro .inside .content .title {
     font-size: 2.3rem;
   }
