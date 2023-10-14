@@ -304,6 +304,9 @@ header.scrolled .inside {
   margin: 1.5rem auto;
 }
 
+.designed {
+  overflow: hidden;
+}
 .designed .inside {
   position: relative;
   display: flex;
@@ -399,6 +402,9 @@ header.scrolled .inside {
   line-height: 2rem;
 }
 
+.laptop {
+  overflow: hidden;
+}
 .laptop .inside {
   display: flex;
   padding: 14rem 9rem;
@@ -498,19 +504,18 @@ footer .inside .footer-category ul li:hover {
   }
   header .inside .menu-container {
     display: none;
-    position: fixed;
-    z-index: 10;
+    position: absolute;
+    left: center;
     color: hsl(208, 49%, 24%);
     font-size: 1.1rem;
     background: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     flex-direction: column;
-    top: 8rem;
+    top: 6rem;
     gap: 1.5rem;
     width: 90%;
     padding: 1.5rem;
-    margin: auto;
   }
   header .inside .menu-container.mobile-menu {
     display: flex;

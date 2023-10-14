@@ -201,6 +201,7 @@ header {
 
 // SECTION 2 //
 .designed {
+  overflow: hidden;
   .inside {
     position: relative;
     display: flex;
@@ -277,6 +278,7 @@ header {
     );
   color: $white;
   padding: 8rem 0rem;
+  // overflow: hidden;
 
   .inside {
     display: flex;
@@ -320,6 +322,7 @@ header {
 
 // SECTION 4 //
 .laptop {
+  overflow: hidden;
   .inside {
     display: flex;
     padding: 14rem 9rem;
@@ -450,19 +453,20 @@ footer {
       .menu-container {
         display: none;
 
-        position: fixed;
-        z-index: 10;
+        position: absolute;
+        left: center;
+
         color: $very-dark-blue;
         font-size: 1.1rem;
         background: white;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
         flex-direction: column;
-        top: 8rem;
+        top: 6rem;
         gap: 1.5rem;
         width: 90%;
         padding: 1.5rem;
-        margin: auto;
+
         &.mobile-menu {
           display: flex;
           opacity: 1;
