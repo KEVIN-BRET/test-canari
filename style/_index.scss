@@ -417,11 +417,18 @@ footer {
 //* MEDIA QUERIES *//
 
 @media (max-width: 1000px) {
+  // HEADER //
   header {
     .inside {
       // border: 2px solid green;
 
       padding: 2.5rem 1.5rem 2.5rem 1.5em;
+
+      .logo {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
       .mobile-menu-btn {
         display: flex;
 
@@ -439,7 +446,7 @@ footer {
         display: none;
 
         position: absolute;
-        left: center;
+        right: 1.5rem;
 
         color: $very-dark-blue;
         font-size: 1.1rem;
@@ -451,62 +458,12 @@ footer {
         gap: 1.5rem;
         width: 90%;
         padding: 1.5rem;
+        max-width: 400px;
 
         &.mobile-menu {
           display: flex;
           opacity: 1;
         }
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    // HEADER //
-    header {
-      .inside {
-        // border: 2px solid green;
-
-        // padding: 2.5rem 1.5rem 2.5rem 1.5em;
-
-        .logo {
-          font-size: 2rem;
-          font-weight: 500;
-        }
-
-        // .mobile-menu-btn {
-        //   display: flex;
-
-        //   .burgerBtn {
-        //     display: flex;
-        //   }
-
-        //   .closeBtn {
-        //     display: none;
-        //     cursor: pointer;
-        //   }
-        // }
-
-        // .menu-container {
-        //   display: none;
-
-        //   position: absolute;
-        //   left: center;
-
-        //   color: $very-dark-blue;
-        //   font-size: 1.1rem;
-        //   background: white;
-        //   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-        //   border-radius: 5px;
-        //   flex-direction: column;
-        //   top: 6rem;
-        //   gap: 1.5rem;
-        //   width: 90%;
-        //   padding: 1.5rem;
-
-        //   &.mobile-menu {
-        //     display: flex;
-        //     opacity: 1;
-        //   }
 
         .nav {
           gap: 1rem;
@@ -578,7 +535,9 @@ footer {
       }
     }
   }
+}
 
+@media (max-width: 768px) {
   // SECTION 1 (<768px) //
   .intro {
     // padding: 0 1.5rem;

@@ -477,6 +477,10 @@ footer .inside .footer-category ul li:hover {
   header .inside {
     padding: 2.5rem 1.5rem 2.5rem 1.5em;
   }
+  header .inside .logo {
+    font-size: 2rem;
+    font-weight: 500;
+  }
   header .inside .mobile-menu-btn {
     display: flex;
   }
@@ -490,7 +494,7 @@ footer .inside .footer-category ul li:hover {
   header .inside .menu-container {
     display: none;
     position: absolute;
-    left: center;
+    right: 1.5rem;
     color: hsl(208, 49%, 24%);
     font-size: 1.1rem;
     background: white;
@@ -501,22 +505,17 @@ footer .inside .footer-category ul li:hover {
     gap: 1.5rem;
     width: 90%;
     padding: 1.5rem;
+    max-width: 400px;
   }
   header .inside .menu-container.mobile-menu {
     display: flex;
     opacity: 1;
   }
-}
-@media (max-width: 1000px) and (max-width: 768px) {
-  header .inside .logo {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  header .inside .nav {
+  header .inside .menu-container .nav {
     gap: 1rem;
     border-bottom: 1px solid rgb(233, 232, 232);
   }
-  header .inside .nav .nav-links {
+  header .inside .menu-container .nav .nav-links {
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -524,22 +523,22 @@ footer .inside .footer-category ul li:hover {
     width: 100%;
     gap: 0rem;
   }
-  header .inside .nav .nav-links .category-link {
+  header .inside .menu-container .nav .nav-links .category-link {
     flex-direction: column;
     width: 100%;
   }
-  header .inside .nav .nav-links .category-link .menuTitle {
+  header .inside .menu-container .nav .nav-links .category-link .menuTitle {
     margin: auto;
     color: hsl(208, 49%, 24%);
     margin-bottom: 1rem;
   }
-  header .inside .nav .nav-links .category-link .menuTitle span .arrow-dark {
+  header .inside .menu-container .nav .nav-links .category-link .menuTitle span .arrow-dark {
     display: flex;
   }
-  header .inside .nav .nav-links .category-link .menuTitle span .arrow-light {
+  header .inside .menu-container .nav .nav-links .category-link .menuTitle span .arrow-light {
     display: none;
   }
-  header .inside .nav .nav-links .category-link .menuItems {
+  header .inside .menu-container .nav .nav-links .category-link .menuItems {
     position: relative;
     flex-direction: column;
     top: 0;
@@ -549,22 +548,22 @@ footer .inside .footer-category ul li:hover {
     gap: 1rem;
     background: rgb(233, 232, 232);
   }
-  header .inside .nav .nav-links .category-link .menuItems .menuItem {
+  header .inside .menu-container .nav .nav-links .category-link .menuItems .menuItem {
     width: 100%;
     color: hsl(208, 49%, 24%);
   }
-  header .inside .connexion {
+  header .inside .menu-container .connexion {
     flex-direction: column;
     margin: 0.8rem;
     gap: 1.5rem;
     color: hsl(208, 49%, 24%);
   }
-  header .inside .connexion .btn-colored {
+  header .inside .menu-container .connexion .btn-colored {
     color: hsl(0, 0%, 100%);
     background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 1000%);
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .intro .inside .content .title {
     font-size: 2.3rem;
   }
