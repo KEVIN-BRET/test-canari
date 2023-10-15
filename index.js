@@ -1,15 +1,14 @@
-const burgerBtn = document.querySelector(".burgerBtn");
+const toggleBtn = document.querySelector(".toggle-btn");
 // const closeBtn = document.querySelector(".closeBtn");
 const menu = document.querySelector(".menu-container");
 
-// const header = document.querySelector(".header");
-
 // Open/close mobile menu :
-burgerBtn.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
+  // chagement de forme du bouton :
+  toggleBtn.classList.toggle("active");
+  // Affichage du menu :
   menu.classList.toggle("mobile-menu");
   console.log("click");
-  //   burgerBtn.style.display = "none";
-  //   closeBtn.style.display = "flex";
 });
 
 // Evénément au scroll : la hauteur dse la nav se reduit

@@ -476,20 +476,33 @@ footer .inside .footer-category ul li:hover {
 @media (max-width: 1000px) {
   header .inside {
     padding: 2.5rem 1.5rem 2.5rem 1.5em;
+    /* transformation du bouton hamburger */
   }
   header .inside .logo {
     font-size: 2rem;
     font-weight: 500;
   }
-  header .inside .mobile-menu-btn {
-    display: flex;
-  }
-  header .inside .mobile-menu-btn .burgerBtn {
-    display: flex;
-  }
-  header .inside .mobile-menu-btn .closeBtn {
-    display: none;
+  header .inside .toggle-btn {
     cursor: pointer;
+    width: 32px;
+  }
+  header .inside .toggle-btn span {
+    width: 32px;
+    height: 2px;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%);
+    display: block;
+    margin-top: 6px;
+    transition: 0.3s ease-out;
+  }
+  header .inside .toggle-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  header .inside .toggle-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .inside .toggle-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   header .inside .menu-container {
     display: none;
@@ -505,7 +518,7 @@ footer .inside .footer-category ul li:hover {
     gap: 1.5rem;
     width: 90%;
     padding: 1.5rem;
-    max-width: 400px;
+    max-width: 800px;
   }
   header .inside .menu-container.mobile-menu {
     display: flex;

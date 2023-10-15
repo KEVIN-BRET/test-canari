@@ -421,7 +421,6 @@ footer {
   header {
     .inside {
       // border: 2px solid green;
-
       padding: 2.5rem 1.5rem 2.5rem 1.5em;
 
       .logo {
@@ -429,17 +428,37 @@ footer {
         font-weight: 500;
       }
 
-      .mobile-menu-btn {
-        display: flex;
+      .toggle-btn {
+        // position: absolute;
+        // top: 30px;
+        // left: 240px;
+        cursor: pointer;
+        // height: 32px;
+        width: 32px;
 
-        .burgerBtn {
-          display: flex;
+        span {
+          width: 32px;
+          height: 2px;
+          border-radius: 5px;
+          background: $white;
+          display: block;
+          margin-top: 6px;
+          transition: 0.3s ease-out;
         }
+      }
 
-        .closeBtn {
-          display: none;
-          cursor: pointer;
-        }
+      /* transformation du bouton hamburger */
+      .toggle-btn.active span {
+        // position: relative;
+      }
+      .toggle-btn.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .toggle-btn.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .toggle-btn.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
       }
 
       .menu-container {
@@ -458,7 +477,7 @@ footer {
         gap: 1.5rem;
         width: 90%;
         padding: 1.5rem;
-        max-width: 400px;
+        max-width: 800px;
 
         &.mobile-menu {
           display: flex;
