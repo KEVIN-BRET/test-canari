@@ -152,12 +152,16 @@ textarea {
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .logo {
   display: flex;
   align-items: center;
   font-size: 2.5rem;
   font-weight: 500;
-  color: hsl(0, 0%, 100%);
+  color: white;
 }
 
 header .inside {
@@ -244,7 +248,7 @@ header .inside .menu-container .nav .nav-links .category-link .menuItems {
   position: absolute;
   top: 2rem;
   left: -1.5rem;
-  background: hsl(0, 0%, 100%);
+  background: white;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   gap: 1rem;
@@ -277,7 +281,7 @@ header.scrolled .inside {
   padding: 7rem 3rem 4rem 3rem;
   border-radius: 0 0 0 6rem;
   background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, hsl(13, 100%, 72%) 5%, hsl(353, 100%, 62%) 60%);
-  color: hsl(0, 0%, 100%);
+  color: white;
   background-size: 220%;
   background-position: left 24% bottom 48%;
 }
@@ -363,7 +367,7 @@ header.scrolled .inside {
 .phone {
   border-radius: 0 6rem 0 6rem;
   background: url(./images/bg-pattern-circles.svg) -200px 80%/70% no-repeat, linear-gradient(90deg, hsl(237, 17%, 21%) 5%, hsl(237, 23%, 32%) 60%);
-  color: hsl(0, 0%, 100%);
+  color: white;
   padding: 8rem 0rem;
 }
 .phone .inside {
@@ -442,7 +446,7 @@ header.scrolled .inside {
 }
 
 footer {
-  color: hsl(0, 0%, 100%);
+  color: white;
   background: hsl(240, 10%, 16%);
   padding: 4rem 9rem;
   border-radius: 0 6rem 0 0;
@@ -490,7 +494,7 @@ footer .inside .footer-category ul li:hover {
     width: 32px;
     height: 2px;
     border-radius: 5px;
-    background: hsl(0, 0%, 100%);
+    background: white;
     display: block;
     margin-top: 6px;
     transition: 0.3s ease-out;
@@ -572,7 +576,7 @@ footer .inside .footer-category ul li:hover {
     color: hsl(208, 49%, 24%);
   }
   header .inside .menu-container .connexion .btn-colored {
-    color: hsl(0, 0%, 100%);
+    color: white;
     background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 1000%);
   }
 }
@@ -720,18 +724,18 @@ footer .inside .footer-category ul li:hover {
 }
 .btn.btn-colored {
   color: hsl(356, 100%, 66%);
-  background: hsl(0, 0%, 100%);
+  background: white;
 }
 .btn.btn-colored:hover {
   background: rgb(255, 138, 157);
-  color: hsl(0, 0%, 100%);
+  color: white;
 }
 .btn.btn-borded {
   color: #ffe0dd;
   border: 1px solid #ffe0dd;
 }
 .btn.btn-borded:hover {
-  background: hsl(0, 0%, 100%);
+  background: white;
   color: hsl(356, 100%, 66%);
 }
 
